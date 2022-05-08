@@ -4,18 +4,44 @@ using UnityEngine;
 
 public abstract class Piece : MonoBehaviour
 {
-    public int positionX { set; get; }
-    public int positionY { set; get; }
-    public bool isWhite;
+    public Board board { protected get; set; }
+    public Vector2Int occupiedSquare{ get; set; }
+    public bool hasMoved { get; private set; }
+    public PieceInfo.TeamColour team { get; set; }
+    public List<Vector2Int> availableMoves;
 
-    public void SetPosition(int x, int y)
+    public abstract List<Vector2Int> SelectAvailableMoves();
+
+    private void Awake()
     {
-        positionX = x;
-        positionY = y;
+        availableMoves = new List<Vector2Int>();
     }
 
-    public virtual bool isLegalMove(int x, int y)
+    public bool isFromSameTeam(Piece piece)
     {
-        return true;
+        return team == piece.team;
+    }
+
+    public bool CanMoveTo(Vector2Int position)
+    {
+        return availableMoves.Contains(position);
+    }
+
+    public virtual void MovePiece(Vector2Int position)
+    {
+
+    }
+
+    protected void TryToAddMove(Vector2Int position)
+    {
+        availableMoves.Add(position);
+    }
+
+    public void SetData(Vector2Int position, PieceInfo.TeamColour team, Board board)
+    {
+        this.team = team;
+        occupiedSquare = position;
+        this.board = board;
+        transform.position = board.SetPosition(position);
     }
 }

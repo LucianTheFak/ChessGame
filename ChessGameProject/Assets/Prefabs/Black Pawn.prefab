@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 484090}
   - component: {fileID: 3354540}
   - component: {fileID: 2309778}
-  - component: {fileID: 6410760}
   - component: {fileID: -1876370114003698046}
   m_Layer: 0
   m_Name: Black Pawn
@@ -85,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6410760
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138226}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 8fbcce33444d4ce4db5b61f8d0eeb7aa, type: 3}
 --- !u!114 &-1876370114003698046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,4 +96,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ca5096ed96c7e4fa9855183171a6df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWhite: 0
+  availableMoves: []

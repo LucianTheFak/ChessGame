@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class Knight : Piece
 {
-    void Start()
+    public override List<Vector2Int> SelectAvailableMoves()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        throw new System.NotImplementedException();
     }
 }

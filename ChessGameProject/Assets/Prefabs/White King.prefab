@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 422114}
   - component: {fileID: 3379130}
   - component: {fileID: 2300604}
-  - component: {fileID: 6438220}
   - component: {fileID: -7223972483850024915}
   m_Layer: 0
   m_Name: White King
@@ -85,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6438220
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119820}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 763435837405bc24691af77936be360b, type: 3}
 --- !u!114 &-7223972483850024915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,4 +96,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e0c9ecb3f644041a8b819c35c1d405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWhite: 1
+  availableMoves: []

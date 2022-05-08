@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class Rook : Piece
 {
-    void Start()
+    public override List<Vector2Int> SelectAvailableMoves()
     {
-        
-    }
-    void Update()
-    {
-        
+        throw new System.NotImplementedException();
     }
 }

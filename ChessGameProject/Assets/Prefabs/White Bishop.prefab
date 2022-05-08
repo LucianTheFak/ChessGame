@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 439312}
   - component: {fileID: 3340028}
   - component: {fileID: 2380346}
-  - component: {fileID: 6484090}
   - component: {fileID: 7047542334854079853}
   m_Layer: 0
   m_Name: White Bishop
@@ -85,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6484090
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190264}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 1e1130c2d0732f44eb82b057a9dcf58b, type: 3}
 --- !u!114 &7047542334854079853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,4 +96,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9940c487f565a42a731aedaeef8713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWhite: 1
+  availableMoves: []
